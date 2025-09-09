@@ -12,7 +12,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   //to check Firebase initialized
-  print('Doneee....., Firebase initialized');
+  print(' Firebase initialized');
   runApp(const ChatApp());
 }
 

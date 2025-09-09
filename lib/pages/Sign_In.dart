@@ -70,7 +70,7 @@ class _SignInState extends State<SignIn> {
                       onChanged: (data) {
                         pass = data;
                       },
-                      hintText: 'Password', // ✅ تصحيح الإملاء
+                      hintText: 'Password',
                     ),
                     SizedBox(height: 25),
                     CustomeButton(
@@ -82,8 +82,6 @@ class _SignInState extends State<SignIn> {
 
                           try {
                             await signInUser();
-
-                            // ✅ الانتقال بعد تسجيل الدخول الناجح
                             Navigator.pushNamed(
                               context,
                               ChatPage.id,
