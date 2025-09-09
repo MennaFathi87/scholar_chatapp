@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "924408015570",
+    "project_id": "chat-dd643",
+    "storage_bucket": "chat-dd643.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924408015570:android:c4fd919b1d1846d6991b0b",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9JA3PITd1tAxbxJWV6L43RVtyI1DvcAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924408015570:android:1b9d1e70bf77747e991b0b",
+        "android_client_info": {
+          "package_name": "com.example.scholarchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9JA3PITd1tAxbxJWV6L43RVtyI1DvcAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
