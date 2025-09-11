@@ -12,7 +12,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   //to check Firebase initialized
-  print(' Firebase initialized');
+  print('Donnnnne.. Firebase initialized');
   runApp(const ChatApp());
 }
 
@@ -31,3 +31,5 @@ class ChatApp extends StatelessWidget {
     );
   }
 }
+
+//
