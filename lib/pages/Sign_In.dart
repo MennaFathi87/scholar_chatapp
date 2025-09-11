@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
+import 'package:scholarchat/constant.dart';
 import 'package:scholarchat/helper/snack_bar.dart';
 import 'package:scholarchat/pages/Chat_page.dart';
 import 'package:scholarchat/pages/Register_page.dart';
@@ -35,7 +36,7 @@ class _SignInState extends State<SignIn> {
                 child: Column(
                   children: [
                     SizedBox(height: 40),
-                    Image.asset('assets/images/scholar.png'),
+                    Image.asset(kLogo),
                     SizedBox(height: 25),
                     Text(
                       'ScholarChat',
@@ -76,15 +77,18 @@ class _SignInState extends State<SignIn> {
                     CustomeButton(
                       txt: 'Sign In',
                       onTap: () async {
+                        //validate data 
                         if (formKey.currentState!.validate()) {
                           isLoad = true;
                           setState(() {});
 
                           try {
+                            //firbase auth
                             await signInUser();
                             Navigator.pushNamed(
                               context,
                               ChatPage.id,
+                              //
                               arguments: email,
                             );
                           } on FirebaseAuthException catch (ex) {
